@@ -1,0 +1,15 @@
+.clock_view {
+  display: flex;
+  flex: 1;
+  color: white;
+  font-size: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+}
+
+.clock_text {
+  width: 220px;
+}
