@@ -1,12 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+import Clock from './clock/Clock';
+import Timer from './timer/Timer';
+import Tabs from './headerTab/Tabs';
+
 import './App.css';
-import Clock from './Clock';
 
 function App() {
+  const [isTimer, setTimer] = useState(false);
   return (
     <div className='App'>
-      <header className='App-header'></header>
-      <Clock />
+      <header className='App-header'>
+        <Tabs
+          isTimer={isTimer}
+          onItemClick={(value) => {
+            setTimer(value);
+          }}
+        />
+      </header>
+      {isTimer ? <Timer /> : <Clock />}
     </div>
   );
 }

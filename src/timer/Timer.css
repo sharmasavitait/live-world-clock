@@ -1,0 +1,45 @@
+.timer_view {
+  display: flex;
+  /* flex: 1; */
+  color: white;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+}
+
+/* .timer_text {
+  display: flex;
+  /* width: 50px; */
+
+/* .timer {
+  margin-top: 15px;
+  font-size: 50px;
+  color: white;
+} */
+.button {
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  justify-content: center;
+}
+
+.set {
+  margin: 10px;
+  border-radius: 10px;
+  border-color: rgb(130, 130, 133);
+  border: transparent;
+  width: 7%;
+  height: 70%;
+}
+
+.stop {
+  margin: 10px;
+  border-radius: 10px;
+  border-color: rgb(130, 130, 133);
+  border: transparent;
+  width: 7%;
+  height: 70%;
+}
