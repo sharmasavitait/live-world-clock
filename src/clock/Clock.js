@@ -19,7 +19,9 @@ export default function Clock() {
 
   return (
     <div className='clock_view'>
-      <TextTransition className='clock_text'>{hours}</TextTransition>
+      <TextTransition className='clock_text'>
+        {hours < 10 ? `0${hours}` : `${hours}`}
+      </TextTransition>
       <p>:</p>
       <TextTransition className='clock_text'>
         {minuts < 10 ? `0${minuts}` : `${minuts}`}

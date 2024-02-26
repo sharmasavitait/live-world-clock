@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: black; */
+}
+.header {
+  color: rgb(135, 127, 127);
+  font-size: 50px;
+  /* background-color: grey; */
+  /* border-radius: 10px; */
+}
+.input {
+  border-width: 20px;
+  border-color: rgb(190, 190, 198);
+  font-size: 14px;
+}
+
+.click {
+  margin: 10px;
+  border-width: 20px;
+  border-color: rgb(190, 190, 198);
+  font-size: 15px;
+}
+.ordrlst {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dlt {
+  /* text-align: center; */
+  /* width: 7px; */
+  /* height: 15px; */
+  /* border-radius: 1px; */
+  /* border-color: transparent; */
+  /* background-color: rgb(12, 12, 12); */
+  color: azure;
+
+  /* padding: 5px; */
+
+  margin-bottom: -5px;
+}
+.dlt:hover {
+  background-color: rgb(167, 160, 164);
+}

@@ -46,16 +46,14 @@ export default function Timer() {
   };
 
   return (
-    <>
+    <div className='main_view'>
       <div className='timer_view'>
-        {/* <div className='timer'><p>Timer</p></div> */}
         <div className='timer_text'>{minuts < 10 ? '0' + minuts : minuts}</div>
         <p>:</p>
         <div className='timer_text'>
           {seconds < 10 ? '0' + seconds : seconds}
         </div>
       </div>
-
       <div className='button'>
         <button className='set' onClick={reset}>
           Reset
@@ -64,6 +62,6 @@ export default function Timer() {
           {isRunning ? 'stop' : 'start'}
         </button>
       </div>
-    </>
+    </div>
   );
 }

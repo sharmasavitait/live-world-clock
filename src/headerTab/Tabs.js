@@ -1,11 +1,11 @@
 import React from 'react';
 import './tabs.css';
 
-const a = { name: 'savi', age: 23, isFemale: true };
+// const a = { name: 'savi', age: 23, isFemale: true };
 
-const TABS = ['Clock', 'Stopwatch'];
+const TABS = ['CLOCK', 'STOPWATCH', 'TODOLIST'];
 
-const Tabs = ({ isTimer, onItemClick }) => {
+const Tabs = ({ currentSelected, onItemClick }) => {
   return (
     <div
       style={{
@@ -17,32 +17,26 @@ const Tabs = ({ isTimer, onItemClick }) => {
         alignItems: 'center',
       }}
     >
-      <h2
-        className='tab-item'
-        style={{
-          color: 'white',
-          margin: 10,
-          textDecorationLine: isTimer ? 'none' : 'Underline',
-        }}
-        onClick={() => {
-          onItemClick(false);
-        }}
-      >
-        {'CLOCK'}
-      </h2>
-      <h2
-        className='tab-item'
-        style={{
-          color: 'white',
-          margin: 10,
-          textDecorationLine: isTimer ? 'Underline' : 'none',
-        }}
-        onClick={() => {
-          onItemClick(true);
-        }}
-      >
-        {'STOPWATCH'}
-      </h2>
+      {TABS.map((item) => {
+        return (
+          <h2
+            key={item}
+            className='tab-item'
+            style={{
+              color: 'white',
+              margin: 10,
+              textDecorationLine:
+                currentSelected === item ? 'Underline' : 'none',
+              cursor: 'pointer',
+            }}
+            onClick={() => {
+              onItemClick(item);
+            }}
+          >
+            {item}
+          </h2>
+        );
+      })}
     </div>
   );
 };
